@@ -1,52 +1,45 @@
 package com.hemebiotech.analytics;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.FileWriter;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class AnalyticsCounter {
-	private static int headacheCount = 0;	// initialize to 0
-	private static int rashCount = 0;		// initialize to 0
-	private static int pupilCount = 0;		// initialize to 0
-	private static int diseaseNotAccountedFor = 0; //it's to know if we have read all diseas from the file
 
-	public static void main(String[] args) throws Exception { //error in the main declaration syntax
+	public static <listOfSymptoms> void main(String[] args) throws Exception { //error in the main declaration syntax
 
-		//reading the text file
-		BufferedReader reader = new BufferedReader (new FileReader("symptoms.txt"));
-		String line = reader.readLine();
+		//create the hashmap in which the diseases + num of occurrence will be written
+		Map<String, Integer> symptomsHashMap = new HashMap<String, Integer>();
 
+		//instantiating ReadSymptomDataFromFile, this load an object with the file path to be read.
+		ReadSymptomDataFromFile readSymptomDataFromFile = new ReadSymptomDataFromFile("symptoms.txt");
 
-		while (line != null) {
-			if (line.equals("headache")) {
-				headacheCount++;
-			}
-			else if (line.equals("rash")) {
-				rashCount++;
-			}
-			else if (line.contains("pupils")) {
-				pupilCount++;
+		//using the .GetSymptoms() methode of the weadSymptomDataFromFile object to load in a string the content read from the file
+		List<String> listOfSymptoms = readSymptomDataFromFile.GetSymptoms();
+
+		//iterating through the Strings present in listOfSymptoms
+		for(String item : listOfSymptoms) {
+			if (symptomsHashMap.containsKey(item)) { //if the name of a symptom is already present
+				symptomsHashMap.put(item, symptomsHashMap.get(item) + 1); //increase its count to n + 1
 			} else {
-				diseaseNotAccountedFor++;
+				symptomsHashMap.put(item, 1); //if name of a symptom is not present, adding it + 1
 			}
-			line = reader.readLine();
 		}
-		//closing file's reading method
-		reader.close();
-		System.out.println("Headache: " + headacheCount);
-		System.out.println("Rash: " + rashCount);
-		System.out.println("Pupils: " + pupilCount);
-		System.out.println("Not accounted for: " + diseaseNotAccountedFor);
 
-		ReadSymptomDataFromFile goodMethodToRead = new ReadSymptomDataFromFile("symptoms.txt");
 
-		System.out.println(goodMethodToRead.GetSymptoms());
+//		for (Map.Entry<String, Integer> entry : symptomsHashMap.entrySet()) {
+//			System.out.println(entry.getKey() + " " + entry.getValue());
+//		}
 
-//		// next generate output
-//		FileWriter writer = new FileWriter ("resultOut.txt");
-//		writer.write("headache: " + headacheCount + "\n");
-//		writer.write("rash: " + rashCount + "\n");
-//		writer.write("dialated pupils: " + pupilCount + "\n");
-//		writer.close();
+		//instantiating WriteSymptomDateToFile, this load an object with the file path to be written
+		WriteSymptomDataToFile writeSymptomDataToFile = new WriteSymptomDataToFile("resultooOut.txt");
+
+		//using the .writeSymptoms method of the writeSymptomDataToFile object to print formatted string of the curated hasMap onto a file
+		writeSymptomDataToFile.writeSymptoms(symptomsHashMap);
+
+
+
 	}
 }

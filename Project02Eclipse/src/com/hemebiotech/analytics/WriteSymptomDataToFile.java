@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class WriteSymptomDataToFile implements ISymptomWriter{
 
-    private String filePath;
+    private final String filePath;
 
     public WriteSymptomDataToFile(String filePath) {
         this.filePath = filePath;
@@ -14,14 +14,16 @@ public class WriteSymptomDataToFile implements ISymptomWriter{
 
     @Override
     public void writeSymptoms(Map<String, Integer> writeToFile) {
-        if (writeToFile != null) {
-            try {
-                FileWriter writer = new FileWriter("resultOut.txt");
-                writeToFile.forEach((item, quantity) -> writer.write(item + ": " + quantity);
-                writer.close();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+
+        try {
+            FileWriter writer = new FileWriter(filePath);
+            for (Map.Entry<String, Integer> entry : writeToFile.entrySet()) {
+                System.out.println(entry.getKey() + " " + entry.getValue());
+                writer.write(entry.getKey() + " " + entry.getValue() + "\n");
             }
+            writer.close();
+        } catch (IOException e) {
+            System.out.println("error on printing results to file");
         }
     }
 }

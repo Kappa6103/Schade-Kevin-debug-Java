@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
-	private String filepath;
+	private final String filepath;
 	
 	/**
 	 * 
@@ -37,7 +37,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 				}
 				reader.close();
 			} catch (IOException e) {
-				e.printStackTrace();
+				System.out.println("error while accessing the file to read");
 			}
 		}
 		
