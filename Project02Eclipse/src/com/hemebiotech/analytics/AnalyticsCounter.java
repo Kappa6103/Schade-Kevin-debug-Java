@@ -6,6 +6,18 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class AnalyticsCounter {
+	ISymptomReader reader;
+	ISymptomWriter writer;
+
+
+	public AnalyticsCounter(ISymptomReader reader, ISymptomWriter writer) {
+		this.reader = reader;
+		this.writer = writer;
+	}
+
+	public List<String> getsdfsdf() {
+		return this.reader.GetSymptoms();
+	}
 
 	public static void main(String[] args) { //error in the main declaration syntax
 
