@@ -37,12 +37,16 @@ public class AnalyticsCounter {
 		System.out.println("Rash: " + rashCount);
 		System.out.println("Pupils: " + pupilCount);
 		System.out.println("Not accounted for: " + diseaseNotAccountedFor);
-		
-		// next generate output
-		FileWriter writer = new FileWriter ("resultOut.txt");
-		writer.write("headache: " + headacheCount + "\n");
-		writer.write("rash: " + rashCount + "\n");
-		writer.write("dialated pupils: " + pupilCount + "\n");
-		writer.close();
+
+		ReadSymptomDataFromFile goodMethodToRead = new ReadSymptomDataFromFile("symptoms.txt");
+
+		System.out.println(goodMethodToRead.GetSymptoms());
+
+//		// next generate output
+//		FileWriter writer = new FileWriter ("resultOut.txt");
+//		writer.write("headache: " + headacheCount + "\n");
+//		writer.write("rash: " + rashCount + "\n");
+//		writer.write("dialated pupils: " + pupilCount + "\n");
+//		writer.close();
 	}
 }
