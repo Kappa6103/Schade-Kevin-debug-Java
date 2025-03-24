@@ -8,7 +8,7 @@ public class AnalyticsCounter {
 	private static int headacheCount = 0;	// initialize to 0
 	private static int rashCount = 0;		// initialize to 0
 	private static int pupilCount = 0;		// initialize to 0
-	private static int diseaseNotAccountedFor = 0; //it's to know if we have read all diseas from the file
+	private static int diseaseNotAccountedFor = 0; //it's to know if we have read all diseases from the file
 
 	public static void main(String[] args) throws Exception { //error in the main declaration syntax
 
