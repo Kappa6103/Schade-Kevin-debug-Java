@@ -9,43 +9,12 @@ public class AnalyticsCounter {
 	ISymptomReader reader;
 	ISymptomWriter writer;
 
-
 	public AnalyticsCounter(ISymptomReader reader, ISymptomWriter writer) {
 		this.reader = reader;
 		this.writer = writer;
 	}
 
-
-	public static void main(String[] args) {
-
-		AnalyticsCounter objetAnalytic = new AnalyticsCounter(new ReadSymptomDataFromFile("symptoms.txt"),new WriteSymptomDataToFile("result.out"));
-
-		//using the .GetSymptoms() methode of the readSymptomDataFromFile object to load in a string the content read from the file
-		//List<String> listOfSymptoms = readSymptomDataFromFile.GetSymptoms();
-		List<String> listOfSymptoms = objetAnalytic.reader.GetSymptoms();
-
-		//create the hashmap in which the diseases + num of occurrence will be written
-		//Map<String, Integer> symptomsHashMap = new HashMap<String, Integer>();
-		Map<String, Integer> symptomsHashMap = countSymptoms(listOfSymptoms);
-
-//		//creating a TreeMap to sort the hashMap containing the key/value name/occurrence in alphabetical order
-//		TreeMap<String, Integer> sortedHashMap = new TreeMap<String, Integer>(symptomsHashMap);
-		TreeMap<String, Integer> sortedHashMap = sortSymptoms(symptomsHashMap);
-
-		//using the .writeSymptoms method of the writeSymptomDataToFile object to print formatted string of the curated hasMap onto a file
-		//writeSymptomDataToFile.writeSymptoms(sortedHashMap);
-		objetAnalytic.writer.writeSymptoms(sortedHashMap);
-
-
-
-	}
-	public static TreeMap<String, Integer> sortSymptoms(Map<String, Integer> inputHasMap) {
-        return new TreeMap<>(inputHasMap);
-
-	}
-
-
-	public static Map<String, Integer> countSymptoms(List<String> listOfSymptoms) {
+	public Map<String, Integer> countSymptoms(List<String> listOfSymptoms) {
 		//create the hashmap in which the diseases + num of occurrence will be written
 		Map<String, Integer> symptomsHashMap = new HashMap<>();
 		//iterating through the Strings present in listOfSymptoms and building the unsorted hashMap of names of symptoms and the number of their occurrences.
@@ -59,5 +28,8 @@ public class AnalyticsCounter {
 		return symptomsHashMap;
 	}
 
+	public TreeMap<String, Integer> sortSymptoms(Map<String, Integer> inputHasMap) {
+        return new TreeMap<>(inputHasMap);
+	}
 
 }
