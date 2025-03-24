@@ -1,3 +1,8 @@
+/**
+ *Implements the tooling used in the Main fonction
+ *like the counting of the symptoms and the sorting of lists
+ */
+
 package com.hemebiotech.analytics;
 
 import java.util.HashMap;
@@ -15,6 +20,12 @@ public class AnalyticsCounter {
 		this.writer = writer;
 	}
 
+	/**
+	 *Count the number of symptons in the list
+	 *
+	 * @param listOfSymptoms is a List of Strings that we want to count
+	 * @return the method returns a hashmap with Key/Value String/Integer of the symptoms and their counts
+	 */
 	public Map<String, Integer> countSymptoms(List<String> listOfSymptoms) {
 		//create the hashmap in which the diseases + num of occurrence will be written
 		Map<String, Integer> symptomsHashMap = new HashMap<>();
@@ -29,6 +40,13 @@ public class AnalyticsCounter {
 		return symptomsHashMap;
 	}
 
+	/**
+	 * Sort the hashMap in alphabetical order
+	 *
+	 *
+	 * @param inputHasMap, names of symptoms and their occurrence.
+	 * @return a TreeMap, used for the sorting process
+	 */
 	public TreeMap<String, Integer> sortSymptoms(Map<String, Integer> inputHasMap) {
         return new TreeMap<>(inputHasMap);
 	}

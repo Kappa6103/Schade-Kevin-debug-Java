@@ -1,3 +1,8 @@
+/**
+ * Simple brute force implementation
+ *
+ */
+
 package com.hemebiotech.analytics;
 
 import java.io.BufferedReader;
@@ -6,10 +11,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Simple brute force implementation
- *
- */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	private final String filepath;
@@ -24,8 +25,8 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	
 	@Override
 	public List<String> GetSymptoms() {
-		ArrayList<String> result = new ArrayList<String>();
-		
+		ArrayList<String> result = new ArrayList<>();
+
 		if (filepath != null) {
 			try {
 				BufferedReader reader = new BufferedReader (new FileReader(filepath));
