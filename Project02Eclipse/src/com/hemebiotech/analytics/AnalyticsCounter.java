@@ -8,6 +8,7 @@ import java.util.TreeMap;
 public class AnalyticsCounter {
 	ISymptomReader reader;
 	ISymptomWriter writer;
+	final int ADD_ONE = 1;
 
 	public AnalyticsCounter(ISymptomReader reader, ISymptomWriter writer) {
 		this.reader = reader;
@@ -20,9 +21,9 @@ public class AnalyticsCounter {
 		//iterating through the Strings present in listOfSymptoms and building the unsorted hashMap of names of symptoms and the number of their occurrences.
 		for(String item : listOfSymptoms) {
 			if (symptomsHashMap.containsKey(item)) { //if the name of a symptom is already present
-				symptomsHashMap.put(item, symptomsHashMap.get(item) + 1); //increase its count to n + 1
+				symptomsHashMap.put(item, symptomsHashMap.get(item) + ADD_ONE); //increase its count to n + 1
 			} else {
-				symptomsHashMap.put(item, 1); //if name of a symptom is not present, adding it + 1
+				symptomsHashMap.put(item, ADD_ONE); //if name of a symptom is not present, adding it + 1
 			}
 		}
 		return symptomsHashMap;
