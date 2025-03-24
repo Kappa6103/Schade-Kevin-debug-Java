@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00e82e5b-ba55-4303-af72-415916879e61" name="Changes" comment="everything is working&#10;logic is nice and tidy&#10;going to refactor next">
-      <change afterPath="$PROJECT_DIR$/out/production/Project02Eclipse/com/hemebiotech/analytics/ISymptomWriter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Project02Eclipse/com/hemebiotech/analytics/WriteSymptomDataToFile.class" afterDir="false" />
+    <list default="true" id="00e82e5b-ba55-4303-af72-415916879e61" name="Changes" comment="first step in refactoring.&#10;created the new main class too soon i think.&#10;going to write all of my logic into method first. it's going to be easier i reckon.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project02Eclipse/com/hemebiotech/analytics/production/Project02Eclipse/com/hemebiotech/analytics/AnalyticsCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project02Eclipse/com/hemebiotech/analytics/production/Project02Eclipse/com/hemebiotech/analytics/AnalyticsCounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultOut.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultooOut.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hemebiotech/analytics/AnalyticsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hemebiotech/analytics/AnalyticsCounter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,21 +48,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AnalyticsCounter.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "step__4__refactoring",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/Documents/OpenClassrooms/Projet 2/Challenge_Java_P2",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AnalyticsCounter.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;step__4__refactoring&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Documents/OpenClassrooms/Projet 2/Challenge_Java_P2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="AnalyticsCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hemebiotech.analytics.AnalyticsCounter" />
@@ -128,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742575590735</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="first step in refactoring.&#10;created the new main class too soon i think.&#10;going to write all of my logic into method first. it's going to be easier i reckon.">
+      <option name="closed" value="true" />
+      <created>1742575889304</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742575889304</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -138,6 +150,7 @@
     <MESSAGE value="removing unnecessary comment and cleaning up the logique." />
     <MESSAGE value="creating writer interface and class" />
     <MESSAGE value="everything is working&#10;logic is nice and tidy&#10;going to refactor next" />
-    <option name="LAST_COMMIT_MESSAGE" value="everything is working&#10;logic is nice and tidy&#10;going to refactor next" />
+    <MESSAGE value="first step in refactoring.&#10;created the new main class too soon i think.&#10;going to write all of my logic into method first. it's going to be easier i reckon." />
+    <option name="LAST_COMMIT_MESSAGE" value="first step in refactoring.&#10;created the new main class too soon i think.&#10;going to write all of my logic into method first. it's going to be easier i reckon." />
   </component>
 </project>
