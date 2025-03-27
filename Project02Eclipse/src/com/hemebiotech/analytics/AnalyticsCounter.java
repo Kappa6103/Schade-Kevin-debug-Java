@@ -11,8 +11,8 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class AnalyticsCounter {
-	ISymptomReader reader;
-	ISymptomWriter writer;
+	private ISymptomReader reader;
+	private ISymptomWriter writer;
 	final int ADD_ONE = 1;
 
 	public AnalyticsCounter(ISymptomReader reader, ISymptomWriter writer) {
