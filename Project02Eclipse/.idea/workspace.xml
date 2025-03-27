@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00e82e5b-ba55-4303-af72-415916879e61" name="Changes" comment="Step 5 done&#10;new main class completed" />
+    <list default="true" id="00e82e5b-ba55-4303-af72-415916879e61" name="Changes" comment="creating and adding files to the gitIgnore config file">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project02Eclipse/com/hemebiotech/analytics/production/Project02Eclipse/com/hemebiotech/analytics/AnalyticsCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project02Eclipse/com/hemebiotech/analytics/production/Project02Eclipse/com/hemebiotech/analytics/AnalyticsCounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project02Eclipse/com/hemebiotech/analytics/production/Project02Eclipse/com/hemebiotech/analytics/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project02Eclipse/com/hemebiotech/analytics/production/Project02Eclipse/com/hemebiotech/analytics/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results.out" beforeDir="false" afterPath="$PROJECT_DIR$/results.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hemebiotech/analytics/AnalyticsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hemebiotech/analytics/AnalyticsCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hemebiotech/analytics/ISymptomReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hemebiotech/analytics/ISymptomReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hemebiotech/analytics/ISymptomWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hemebiotech/analytics/ISymptomWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hemebiotech/analytics/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hemebiotech/analytics/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hemebiotech/analytics/ReadSymptomDataFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hemebiotech/analytics/ReadSymptomDataFromFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hemebiotech/analytics/WriteSymptomDataToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hemebiotech/analytics/WriteSymptomDataToFile.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../Project02Eclipse\exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,23 +58,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AnalyticsCounter.executor": "Run",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/Documents/OpenClassrooms/Projet 2/Challenge_Java_P2",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AnalyticsCounter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Documents/OpenClassrooms/Projet 2/Challenge_Java_P2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="AnalyticsCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hemebiotech.analytics.AnalyticsCounter" />
@@ -173,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742813738069</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="creating and adding files to the gitIgnore config file">
+      <option name="closed" value="true" />
+      <created>1743081727397</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743081727397</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -186,6 +211,7 @@
     <MESSAGE value="first step in refactoring.&#10;created the new main class too soon i think.&#10;going to write all of my logic into method first. it's going to be easier i reckon." />
     <MESSAGE value="Step 4 completed&#10;refactoring done&#10;ready for step 5" />
     <MESSAGE value="Step 5 done&#10;new main class completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 5 done&#10;new main class completed" />
+    <MESSAGE value="creating and adding files to the gitIgnore config file" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating and adding files to the gitIgnore config file" />
   </component>
 </project>

@@ -1,13 +1,13 @@
-/**
- * creates an object to write a Map<String, Integer> to a text file.
- * try / catch block implemented to handle IO error
- */
-
 package com.hemebiotech.analytics;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
+
+/**
+ * creates an object to write a Map<String, Integer> to a text file.
+ * try / catch block implemented to handle IO error
+ */
 
 public class WriteSymptomDataToFile implements ISymptomWriter{
 

@@ -1,10 +1,10 @@
-/**
- * Anything that will write the output of the program to a file
- */
-
 package com.hemebiotech.analytics;
 
 import java.util.Map;
+
+/**
+ * Anything that will write the output of the program to a file
+ */
 
 public interface ISymptomWriter {
     /**
