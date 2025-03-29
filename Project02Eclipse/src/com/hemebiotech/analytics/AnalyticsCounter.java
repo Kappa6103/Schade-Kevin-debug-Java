@@ -11,16 +11,10 @@ import java.util.TreeMap;
  */
 
 public class AnalyticsCounter {
-<<<<<<< HEAD
+
 	private ISymptomReader reader;
 	private ISymptomWriter writer;
 	final int ADD_ONE = 1;
-=======
-	private static int headacheCount = 0;	// initialize to 0
-	private static int rashCount = 0;		// initialize to 0
-	private static int pupilCount = 0;		// initialize to 0
-	private static int diseaseNotAccountedFor = 0; //it's to know if we have read all diseases from the file
->>>>>>> step2_Analyse_du_code_existant
 
 	public AnalyticsCounter(ISymptomReader reader, ISymptomWriter writer) {
 		this.reader = reader;
