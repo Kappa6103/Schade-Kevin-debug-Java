@@ -10,6 +10,7 @@ Written with the powerful programming language Java.
 - Can read .txt files !
 - Output a simple .txt file, readable by most computers.
 - Fast algorithm.
+- well documented program, see the JavaDoc : Project02Eclipse/JavaDoc
 
 ### ✍️ Authors
 
